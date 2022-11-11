@@ -14,9 +14,16 @@
                   fontFamily: {
                     fontone: ['Emberly'],
                     fonttwo: ['Playfair Display'],
-                    fontthree: ['Beth Ellen']
+                    fontthree: ['Beth Ellen'],
+                    fontfour: ['VCR OSD Mono'],
+                    fontfive: ['Hanson'],
+                    fontsix: ['Arcadia']
+                  },
+                  animation: {
+                    'spin-slow': 'spin 98s linear infinite',
+                    'wiggle': 'wiggle 1s ease-in-out infinite',
+                  }
                 }
-              }
             }
         }
     
@@ -42,44 +49,123 @@
         font-weight: 900;
         font-style: normal;
         }
+
+        @font-face {
+        font-family: 'VCR OSD Mono';
+        src: url('./VCR_OSD_MONO_1.001.ttf') format('truetype');
+        font-weight: 900;
+        font-style: normal;
+        }
+
+        @font-face {
+        font-family: 'Hanson';
+        src: url('./Hanson-Bold.ttf') format('truetype');
+        font-weight: 900;
+        font-style: normal;
+        }
+
+        @font-face {
+        font-family: 'Arcadia';
+        src: url('./Arcadia-SVG.ttf') format('truetype');
+        font-weight: 900;
+        font-style: normal;
+        }
         </style>
     
         <title>Document</title>
     </head>
     <body>
         <section id="NAVIGATION">
-            <nav class="p-3 bg-black md:flex md:items-center md:justify-between">
+            <nav class="p-3 bg-black md:flex md:items-center md:justify-between z-0">
                 <div>
-                    <a class="text-white font-medium text-3xl">CRUXCAREER</a>
+                    <a class="text-white font-medium text-4xl z-0 font-fontsix">CRUXCAREER</a>
                 </div>
                 <ul class="text-white md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-black w-full left-0 md:py-0 md:pl-0 pl-7 md:opacity md:flex justify-end flex-wrap">
                     <li class="m-3 md:my-0">
-                        <a href="" class="hover:text-gray-600 duration-500 ">Home</a>
+                        <a class="hover:text-gray-600 duration-500 ">Home</a>
                     </li>
                     <li class="m-3 md:my-0">
-                        <a href="" class="hover:text-gray-600 duration-500">Contact</a>
+                        <a href="Contact.html" class="hover:text-gray-600 duration-500">Contact</a>
                     </li>
                     <li class="m-3 md:my-0">
-                        <a href="" class="hover:text-gray-600 duration-500">About</a>
+                        <a href="About.html" class="hover:text-gray-600 duration-500">About Us</a>
                     </li>
                     <li class="m-3 md:my-0">
-                        <a href="" class="hover:text-gray-600 duration-500">Profile</a>
+                        <a href="profile.html" class="hover:text-gray-600 duration-500">Profile</a>
                     </li>
                     <li class="m-3 md:my-0">
-                        <a href="" class="border-solid border-2 border-slate-400 py-2 px-12 rounded-xl hover:bg-gray-800 duration-200 hover:text-red-500">
+                        <a href="login.html" class="border-solid border-2 border-slate-400 py-2 px-12 rounded-xl hover:bg-gray-800 duration-200 hover:text-red-500">
                             Login
                         </a>
                     </li>
                     <li class="m-3 md:my-0">
-                        <a href="" class="py-2 px-4 bg-slate-400 rounded-xl hover:bg-gray-800 duration-200 hover:text-red-500">
+                        <a href="createaccount.html" class="py-2 px-4 bg-slate-400 rounded-xl hover:bg-gray-800 duration-200 hover:text-red-500">
                             Create Account
                         </a>
                     </li>
                 </ul>
             </nav>
         </section>
-        <section id="start">
 
+        <section id=" landing-page"
+        class="bg-green-100 h-screen w-full overflow-x-hidden -z-10 bg-center bg-cover relative flex-col flex justify-between"
+        style="background-image: url(./img/Spacebackground\ copy.jpg)">
+        <div class="place-self-end mt-[15rem] lg:mr-20 md:mr-5">
+            <p class="text-white text-2xl font-medium">What is Crux Career?</p>
+            <p class="text-white text-lg font-light max-w-md">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to</p>
+        </div>
+        <div class="fixed top-72 left-48 right-0 z-10 ">
+            <p class="text-6xl font-medium max-w-sm text-white ">Welcome to Crux Careers</p>
+            <h1 class="text-xl font-heading mt-2 mb-2 max-w-sm text-white z-10">Search needed jobs that suits your experties very easily</h1>
+        </div>
+        
+        <img src="./img/REDPLANET1.png" alt="MARS" class="-z-60 relative -top-[31rem] -left-[20rem] object-cover w-[52rem] h-[52rem] rounded-full animate-spin-slow">
+        </section>
+        <!--SPACING NOT FIXED BOXES-->
+        <section id="Aplication usecase"
+        class="bg-black h-[38rem] w-full z-30 overflow-x-hidden bottom-[10rem] bg-center bg-cover"
+        style="background-image: url(./img/surface.jpg)">
+        <p class="text-white text-4xl mt-16 text-center font-medium font-fontsix">HOW DOES OUR APPLICATION WORK?</p>
+        <div class="flex-wrap space-x-0 flex justify-evenly mt-16">
+            <div class="bg-slate-200 h-[23rem] w-[16rem] rounded-2xl p-5 transform transition-all hover:scale-110 duration-500 hover:shadow-2xl hover:bg-black hover:text-white">
+                <img src="./img/Profile.png" alt="profile" class="h-10 w-10 mt-1">
+                <p class="text-2xl font-semibold mt-5">Create Account</p>
+                <p class="mt-1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to </p>
+            </div>
+            <div class="bg-slate-200 h-[23rem] w-[16rem] rounded-2xl p-5 transform transition-all hover:scale-110 duration-500 hover:shadow-2xl hover:bg-black hover:text-white">
+                <img src="./img/Statistic.png" alt="process" class="h-10 w-10 mt-1">
+                <p class="text-2xl font-semibold mt-5">General Info</p>
+                <p class="mt-1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to </p>
+            </div>
+            <div class="bg-slate-200 h-[23rem] w-[16rem] rounded-2xl p-5 transform transition-all hover:scale-110 duration-500 hover:shadow-2xl hover:bg-black hover:text-white">
+                <img src="./img/job.png" alt="job" class="h-10 w-10 mt-1">
+                <p class="text-2xl font-semibold mt-5">Get Career</p>
+                <p class="mt-1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to </p>
+            </div>
+        </div>
+        </section>
+        <!--Carousel-->
+        <section id="Testimonials" class="bg-slate-900 h-[38rem] w-full overflow-x-hidden bg-center">
+            <div class="flex-wrap flex justify-between content-center items-center mt-[6rem] sl:mx-10">
+                <div class="bg-white h-[25rem] w-[19rem] rounded-3xl md:mx-[4rem] sm:mx-auto bg-center bg-cover"
+                    style="background-image: url(./img/testibackground.png)">
+                    <p class="text-black text-3xl font-medium pt-[7rem] px-10">Yī Lóng Mǎ</p>
+                    <p class="text-gray-600 text-xl px-10 pt-1 font-light">CEO PLN</p>
+                    <div class="bg-black w-20 h-0.5 rounded-full ml-10 mt-20"></div>
+                    <img src="./img/starts4.png" alt="stars" class="w-[12rem] h-auto px-5">
+                    <div class="bg-blue-300 h-[20rem] w-[15rem] rounded-3xl ml-60 -mt-[18.5rem] bg-center bg-cover hover:shadow-2xl duration-300"
+                    style="background-image: url(./img/yilongma.jpeg)"></div>
+                </div>
+                <div class="h-[12rem] w-[15rem]">
+                    <p class="text-justify align-middle text-white italic font-light">"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to"</p>
+                </div>
+                <div class="w-0.5 h-52 bg-white rounded-full"></div>
+                <div class="none">
+                    <p class="text-red-600 mb-2">Testimonial</p>
+                    <p class="text-5xl max-w-md text-white font-medium">Dont Believe Us Check What Our Client Think Of Us</p>
+                    <button class="bg-slate-400 hover:bg-red-600 duration-300 text-white font-bold py-2 px-7 rounded-xl mt-2">Start now</button>
+                </div>
+            </div>
         </section>
     </body>
 </html>

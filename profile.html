@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+              theme: {
+                extend: {
+                  colors: { 
+                  },
+                  fontFamily: {
+                    fontone: ['Emberly'],
+                    fonttwo: ['Playfair Display'],
+                    fontthree: ['Beth Ellen'],
+                    fontfour: ['VCR OSD Mono'],
+                    fontfive: ['Hanson'],
+                    fontsix: ['Arcadia'],
+                    fontseven: ['Lato']
+                  },
+                  animation: {
+                    'spin-slow': 'spin 98s linear infinite',
+                    'wiggle': 'wiggle 1s ease-in-out infinite',
+                  }
+                }
+            }
+        }
+    
+          </script>
+          <style>
+            @font-face {
+        font-family: 'Emberly';
+        src: url('./Emberly-Bold.ttf') format('truetype');
+        font-weight: 700;
+        font-style: normal;
+        }
+    
+        @font-face {
+        font-family: 'Emberly';
+        src: url('./Emberly-Black.ttf') format('truetype');
+        font-weight: 900;
+        font-style: bold;
+        }
+    
+        @font-face {
+        font-family: 'Beth Elen';
+        src: url('./BethEllen-Regular.ttf') format('truetype');
+        font-weight: 900;
+        font-style: normal;
+        }
+
+        @font-face {
+        font-family: 'VCR OSD Mono';
+        src: url('./VCR_OSD_MONO_1.001.ttf') format('truetype');
+        font-weight: 900;
+        font-style: normal;
+        }
+
+        @font-face {
+        font-family: 'Hanson';
+        src: url('./Hanson-Bold.ttf') format('truetype');
+        font-weight: 900;
+        font-style: normal;
+        }
+
+        @font-face {
+        font-family: 'Arcadia';
+        src: url('./Arcadia-SVG.ttf') format('truetype');
+        font-weight: 900;
+        font-style: normal;
+        }
+
+        @font-face {
+        font-family: 'Lato';
+        src: url('./Lato-Regular.ttf') format('truetype');
+        font-weight: 900;
+        font-style: normal;
+        }
+        </style>
+    
+        <title>Document</title>
+    </head>
+    <body>
+        <section id="NAVIGATION">
+            <nav class="p-3 bg-black md:flex md:items-center md:justify-between z-0">
+                <div>
+                    <a class="text-white font-medium text-4xl z-0 font-fontsix">CRUXCAREER</a>
+                </div>
+                <ul class="text-white md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-black w-full left-0 md:py-0 md:pl-0 pl-7 md:opacity md:flex justify-end flex-wrap">
+                    <li class="m-3 md:my-0">
+                        <a href="IO HOMEPAGE.html" class="hover:text-gray-600 duration-500 ">Home</a>
+                    </li>
+                    <li class="m-3 md:my-0">
+                        <a href="Contact.html" class="hover:text-gray-600 duration-500">Contact</a>
+                    </li>
+                    <li class="m-3 md:my-0">
+                        <a href="About.html" class="hover:text-gray-600 duration-500">About Us</a>
+                    </li>
+                    <li class="m-3 md:my-0">
+                        <a href="" class="hover:text-gray-600 duration-500">Profile</a>
+                    </li>
+                    <li class="m-3 md:my-0">
+                        <a href="login.html" class="border-solid border-2 border-slate-400 py-2 px-12 rounded-xl hover:bg-gray-800 duration-200 hover:text-red-500">
+                            Login
+                        </a>
+                    </li>
+                    <li class="m-3 md:my-0">
+                        <a href="createaccount.html" class="py-2 px-4 bg-slate-400 rounded-xl hover:bg-gray-800 duration-200 hover:text-red-500">
+                            Create Account
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <section class="h-screen w-full bg-cover bg-center overflow-x-hidden relative"
+        style="background-image: url(./img/Spacebackground\ copy.jpg)">
+        <div class="flex justify-around mt-[4rem]">
+            <div id="profile" class="p-7 flex-col h-[37.5rem] w-[25rem] bg-white rounded-3xl flex items-center mr-2 ml-2">
+                <div class="h-36 w-36 bg-black rounded-full bg-cover bg-top"
+                style="background-image: url(./img/yilongmaprofile.jpeg);">
+            </div>
+            <p class="text-4xl min-w-xl mt-3 font-medium">Yī Lóng Mǎ</p>
+            <p class="text-base mt-3 font-semibold text-gray-400 font-fontseven">Searching for job</p>
+            <div class="mt-3 font-fontseven">
+                <p class="text-base font-normal text-black">Birth date: June, 27 1971</p>
+                <p class="text-base font-normal text-black">Email: Yilongma@mail.ugm.ac.id</p>
+                <p class="text-base font-normal text-black">Mobile no: +(03) 8129347</p>
+                <p class="text-base font-normal text-black">Address: 25°59′15″N 97°11′11″W</p>
+            </div>
+            <div class="mt-6 h-[5rem] w-[20rem] rounded-xl bg-white border-2 px-6 border-gray-300 flex justify-between items-center">
+                <p class="text-lg font-fontsseven">Opportunities applied</p>
+                <p class="text-lg font-fontsseven text-red-600">8</p>
+            </div>
+            <div class="mt-3 h-[5rem] w-[20rem] rounded-xl bg-white border-2 px-6 border-gray-300 flex justify-between items-center">
+                <p class="text-lg font-fontsseven">Opportunities won</p>
+                <p class="text-lg font-fontsseven text-green-500">3</p>
+            </div>
+        </div>
+        <div>
+            <div id="profile" class="p-5 flex-col flex h-auto w-auto bg-white rounded-2xl mb-8">
+                <p class="text-4xl text-black font-semibold">Skills</p>
+                <div class="mt-2 mb-2 mr-2 flex-wrap">
+                    <a class="py-2 px-4 bg-gray-200 rounded-full text-lg text-black font-light mx-1 hover:bg-gray-800 hover:text-white duration-300">
+                        HTML
+                    </a>
+                    <a class="py-2 px-4 bg-gray-200 rounded-full text-lg text-black font-light mx-1 hover:bg-gray-800 hover:text-white duration-300">
+                        CSS
+                    </a>
+                    <a class="py-2 px-4 bg-gray-200 rounded-full text-lg text-black font-light mx-1 hover:bg-gray-800 hover:text-white duration-300">
+                        Java Script
+                    </a>
+                    <a class="py-2 px-4 bg-gray-200 rounded-full text-lg text-black font-light mx-1 hover:bg-gray-800 hover:text-white duration-300">
+                        SQL
+                    </a>
+                    <a class="py-2 px-4 bg-gray-200 rounded-full text-lg text-black font-light mx-1 hover:bg-gray-800 hover:text-white duration-300">
+                        React
+                    </a>
+                    <a class="py-2 px-4 bg-gray-200 rounded-full text-lg text-black font-light mx-1 hover:bg-gray-800 hover:text-white duration-300">
+                        Node js
+                    </a>
+                    <a class="py-2 px-4 bg-gray-200 rounded-full text-lg text-black font-light mx-1 hover:bg-gray-800 hover:text-white duration-300">
+                        Linux
+                    </a>
+                    <a class="py-2 px-4 bg-gray-200 rounded-full text-lg text-black font-light mx-1 hover:bg-gray-800 hover:text-white duration-300">
+                        Python
+                    </a>
+                    <a class="py-2 px-4 bg-gray-200 rounded-full text-lg text-black font-light mx-1 hover:bg-gray-800 hover:text-white duration-300">
+                        C++
+                    </a>
+                    <a class="py-2 px-4 bg-gray-200 rounded-full text-lg text-black font-light mx-1 hover:bg-gray-800 hover:text-white duration-300">
+                        C#
+                    </a>
+                </div>
+            </div>
+            <div id="profile" class="p-5 flex-col flex justify-center min-h-[27.5rem] lg:w-[55rem] bg-white rounded-2xl"></div>
+        </div>
+        </section>
+    </body>
+</html>

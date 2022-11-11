@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+              theme: {
+                extend: {
+                  colors: { 
+                  },
+                  fontFamily: {
+                    fontone: ['Emberly'],
+                    fonttwo: ['Playfair Display'],
+                    fontthree: ['Beth Ellen'],
+                    fontfour: ['VCR OSD Mono'],
+                    fontfive: ['Hanson'],
+                    fontsix: ['Arcadia']
+                  },
+                  animation: {
+                    'spin-slow': 'spin 98s linear infinite',
+                    'wiggle': 'wiggle 1s ease-in-out infinite',
+                  }
+                }
+            }
+        }
+    
+          </script>
+          <style>
+            @font-face {
+        font-family: 'Emberly';
+        src: url('./Emberly-Bold.ttf') format('truetype');
+        font-weight: 700;
+        font-style: normal;
+        }
+    
+        @font-face {
+        font-family: 'Emberly';
+        src: url('./Emberly-Black.ttf') format('truetype');
+        font-weight: 900;
+        font-style: bold;
+        }
+    
+        @font-face {
+        font-family: 'Beth Elen';
+        src: url('./BethEllen-Regular.ttf') format('truetype');
+        font-weight: 900;
+        font-style: normal;
+        }
+
+        @font-face {
+        font-family: 'VCR OSD Mono';
+        src: url('./VCR_OSD_MONO_1.001.ttf') format('truetype');
+        font-weight: 900;
+        font-style: normal;
+        }
+
+        @font-face {
+        font-family: 'Hanson';
+        src: url('./Hanson-Bold.ttf') format('truetype');
+        font-weight: 900;
+        font-style: normal;
+        }
+
+        @font-face {
+        font-family: 'Arcadia';
+        src: url('./Arcadia-SVG.ttf') format('truetype');
+        font-weight: 900;
+        font-style: normal;
+        }
+        </style>
+    
+        <title>Document</title>
+    </head>
+    <body>
+        <section id="NAVIGATION">
+            <nav class="p-3 bg-black md:flex md:items-center md:justify-between z-0">
+                <div>
+                    <a class="text-white font-medium text-4xl z-0 font-fontsix">CRUXCAREER</a>
+                </div>
+                <ul class="text-white md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-black w-full left-0 md:py-0 md:pl-0 pl-7 md:opacity md:flex justify-end flex-wrap">
+                    <li class="m-3 md:my-0">
+                        <a href="IO HOMEPAGE.html" class="hover:text-gray-600 duration-500 ">Home</a>
+                    </li>
+                    <li class="m-3 md:my-0">
+                        <a href="Contact.html" class="hover:text-gray-600 duration-500">Contact</a>
+                    </li>
+                    <li class="m-3 md:my-0">
+                        <a class="hover:text-gray-600 duration-500">About Us</a>
+                    </li>
+                    <li class="m-3 md:my-0">
+                        <a href="profile.html" class="hover:text-gray-600 duration-500">Profile</a>
+                    </li>
+                    <li class="m-3 md:my-0">
+                        <a href="login.html" class="border-solid border-2 border-slate-400 py-2 px-12 rounded-xl hover:bg-gray-800 duration-200 hover:text-red-500">
+                            Login
+                        </a>
+                    </li>
+                    <li class="m-3 md:my-0">
+                        <a href="createaccount.html" class="py-2 px-4 bg-slate-400 rounded-xl hover:bg-gray-800 duration-200 hover:text-red-500">
+                            Create Account
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <section id=" landing-page" class="relative flex items-center justify-start h-screen  overflow-hidden">
+        <div class="relative z-30 bg-purple-300 rounded-xl h-[37rem] w-[30rem] bg-center bg-cover opacity-50 ml-10 p-10" style="background-image: url(./img/testibackground.png)">
+            <p class="font-fontsix text-black text-5xl text-left mb-2">ABOUT</p>
+            <p class="font-2xl text-left text-black mb-3">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form.</p.>
+        </div>
+        <video autoplay loop muted class="absolute z-10 w-auto min-w-full min-h-full max-w-none">
+            <source src="img/Starship Animation.mp4" type="video/mp4"/>
+            Your browser does not support the video tag.
+        </video>
+        </div>
+        </section>
+
+        <body>
+
+        </body>
+
+</html>
